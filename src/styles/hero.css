@@ -218,3 +218,60 @@
     overflow:auto;
     margin:0;
 }
+/* ===========================
+   Mobile Responsive Hero
+=========================== */
+
+@media (max-width: 768px) {
+
+    .hero{
+        padding: 90px 20px 40px;
+        min-height: auto;
+    }
+
+    .hero-container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero-left{
+        order: 1;
+    }
+
+    .hero-right{
+        order: 2;
+    }
+
+    .hero-name{
+        font-size: clamp(2.4rem, 9vw, 3.5rem);
+        line-height: 1.1;
+    }
+
+    .hero-role{
+        font-size: 1.4rem;
+    }
+
+    .hero-description{
+        max-width: 100%;
+        font-size: 1rem;
+        margin: 0 auto 30px;
+    }
+
+    .hero-actions{
+        justify-content: center;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+
+    .code-card{
+        max-width: 100%;
+    }
+
+    .code-content{
+        font-size: 13px;
+    }
+
+}
