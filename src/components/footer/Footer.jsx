@@ -8,7 +8,7 @@ const Footer = () => {
         </p>
 
         <p className="footer-text">
-          Let's build something amazing together.© 2026 Srikanth Rebal
+          Let's build something amazing together.© 2026 Srikanth
         </p>
 
       </div>
