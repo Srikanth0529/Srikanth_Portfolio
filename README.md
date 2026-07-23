@@ -3,7 +3,7 @@
 > A production-ready, responsive, and highly customizable developer portfolio built with **React**, **Vite**, and modern frontend engineering practices.
 
 <p align="center">
-  <img src="./public/favicon.svg" width="90" alt="Portfolio Logo"/>
+<img src="https://skillicons.dev/icons?i=react,vite,js,html,css,git,github,npm,vscode" />
 </p>
 
 ---
