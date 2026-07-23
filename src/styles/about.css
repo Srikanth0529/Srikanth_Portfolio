@@ -1,0 +1,153 @@
+/* ======================================================
+   ABOUT SECTION
+====================================================== */
+
+.about-section {
+
+    background: var(--bg-primary);
+
+    padding: 20px 6% 60px;
+
+}
+
+.about-section .container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+/* ======================================================
+   CONTENT
+====================================================== */
+
+.about-content {
+
+    max-width: 920px;
+
+}
+
+/* ======================================================
+   SECTION TAG
+====================================================== */
+
+.section-tag {
+
+    display: inline-block;
+
+    color: var(--primary);
+
+    font-size: .95rem;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+
+}
+
+/* ======================================================
+   TITLE
+====================================================== */
+
+.about-section .section-title {
+
+    font-size: 2rem;
+
+    font-weight: 800;
+
+    color: var(--text-primary);
+
+    margin-bottom: 18px;
+
+    text-align: left;
+
+}
+
+/* ======================================================
+   BLUE LINE
+====================================================== */
+
+.title-line {
+
+    width: 320px;
+
+    height: 4px;
+
+    border-radius: 50px;
+
+    background: var(--primary);
+
+    margin-bottom: 45px;
+
+}
+
+/* ======================================================
+   PARAGRAPHS
+====================================================== */
+
+.about-text {
+
+    max-width: 900px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.12rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 10px;
+
+    text-align: justify;
+
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width:992px) {
+
+    .about-section {
+
+        padding: 100px 7%;
+
+    }
+
+    .about-section .section-title {
+
+        font-size: 2.5rem;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .about-section {
+
+        padding: 80px 7%;
+
+    }
+
+    .about-section .section-title {
+
+        font-size: 2.2rem;
+
+    }
+
+    .about-text {
+
+        font-size: 1rem;
+
+        text-align: left;
+
+        line-height: 1.9;
+
+    }
+
+}

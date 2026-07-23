@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--font-family);
+
+    background:var(--bg-primary);
+
+    color:var(--text-primary);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+}
+
+ul{
+
+    list-style:none;
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+}
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+}
+
+.container{
+
+    width:min(90%,var(--container-width));
+
+    margin:auto;
+}
+
+section{
+
+    padding:var(--section-padding) 0;
+
+    position:relative;
+}
+.section-title{
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: var(--fs-section);
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+
+    line-height: 1.2;
+
+    color: var(--text-primary);
+
+    margin-bottom: 20px;
+}
+
+.section-subtitle{
+
+    color:var(--text-secondary);
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:70px;
+
+    font-size:17px;
+}
+.primary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    background:var(--gradient);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:var(--transition);
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(59,130,246,.35);
+}
+
+.secondary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 35px;
+
+    border:1px solid var(--border);
+
+    border-radius:50px;
+
+    color:white;
+
+    transition:var(--transition);
+}
+
+.secondary-btn:hover{
+
+    border-color:var(--primary);
+
+    color:var(--primary);
+}
+.card{
+
+    background:var(--bg-card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:30px;
+
+    transition:var(--transition);
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow);
+}

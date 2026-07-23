@@ -1,0 +1,57 @@
+:root {
+
+    /* ==========================
+       COLORS
+    ========================== */
+
+    --bg-primary: #0B1120;
+    --bg-secondary: #111827;
+    --bg-card: #18181B;
+
+    --primary: #3B82F6;
+    --primary-light: #60A5FA;
+    --secondary: #06B6D4;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+
+    --border: rgba(255,255,255,0.08);
+
+    --shadow:
+        0 10px 35px rgba(0,0,0,.35);
+
+    --gradient:
+        linear-gradient(
+            135deg,
+            #3B82F6,
+            #06B6D4
+        );
+
+    /* ==========================
+       TYPOGRAPHY
+    ========================== */
+
+    --font-family:
+    "Times New Roman",
+    Times,
+    serif;
+
+    --fs-hero: 64px;
+    --fs-section: 42px;
+    --fs-subtitle: 22px;
+    --fs-body: 17px;
+    --fs-small: 15px;
+
+    /* ==========================
+       SPACING
+    ========================== */
+
+    --section-padding:30px;
+
+    --container-width:1200px;
+
+    --radius:18px;
+
+    --transition:.35s ease;
+}

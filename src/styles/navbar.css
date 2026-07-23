@@ -1,0 +1,68 @@
+.portfolio-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 60px;
+
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(14px);
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+    z-index:9999;
+
+    transition:all .3s ease;
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size:22px;
+    font-weight:700;
+    color:#4f46e5;
+    letter-spacing:1px;
+}
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:4px;
+    margin:0;
+    padding:0;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+
+    display:block;
+
+    padding:6px 14px;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:#475569;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+.nav-links a:hover{
+
+    background: #eef2ff;
+
+    color: #2563eb;
+}
+.portfolio-navbar.scrolled{
+    background:rgba(255,255,255,.98);
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}

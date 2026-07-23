@@ -1,0 +1,492 @@
+/* ==========================================================
+   EXPERIENCE SECTION
+========================================================== */
+
+.experience-section{
+
+    width:100%;
+    padding: 20px 6% 5px;
+
+    background:var(--bg-primary);
+
+}
+
+.experience-heading{
+
+    display:flex;
+
+    flex-direction:column;
+
+    /* align-items:center; */
+
+    justify-content:center;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================================
+   TRAINING CARD
+========================================================== */
+
+.training-card{
+
+    position:relative;
+
+    background: #1B263B;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius:var(--radius);
+
+    padding:40px;
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+}
+
+.training-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        #ff6b35,
+        var(--primary)
+    );
+
+}
+
+.training-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.training-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.company-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.company-logo{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        #ff6b35,
+        #ff874d
+    );
+
+    color:#fff;
+
+    font-size:26px;
+
+    flex-shrink:0;
+
+}
+
+.company-info h3{
+
+    color:var(--text-primary);
+
+    font-size:34px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    margin-bottom:8px;
+
+}
+
+.company-info h4{
+
+    color:var(--text-secondary);
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+
+.training-duration{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--text-muted);
+
+    font-size:15px;
+
+    white-space:nowrap;
+
+}
+
+.training-duration svg{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================================
+   SUMMARY
+========================================================== */
+
+.training-summary{
+
+    max-width:760px;
+
+    color:var(--text-secondary);
+
+    font-size:var(--fs-body);
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+/* ==========================================================
+   STATS
+========================================================== */
+
+.training-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+    margin-bottom:20px;
+
+}
+
+.stat-card{
+
+    background:var(--bg-secondary);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:28px 20px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:var(--shadow);
+
+}
+
+.stat-icon{
+
+    width:54px;
+
+    height:54px;
+
+    margin:0 auto 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:rgba(59,130,246,.12);
+
+    color:var(--primary);
+
+    font-size:22px;
+
+}
+
+.stat-card h3{
+
+    font-size:36px;
+
+    color:var(--text-primary);
+
+    font-weight:700;
+
+    line-height:1;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    color:var(--text-muted);
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+/* ==========================================================
+   TECHNOLOGIES
+========================================================== */
+
+.tech-wrapper{
+
+    border-top:1px solid var(--border);
+
+    padding-top:28px;
+
+}
+
+.tech-wrapper h5{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+    margin-bottom:18px;
+
+}
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.tech-chip{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:var(--bg-secondary);
+
+    border:1px solid var(--border);
+
+    color:var(--text-secondary);
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.tech-chip:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-color:var(--primary);
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:992px){
+
+    .training-card{
+
+        padding:32px;
+
+    }
+
+    .training-stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .training-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .company-info{
+
+        align-items:flex-start;
+
+    }
+
+    .training-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .company-info h3{
+
+        font-size:28px;
+
+    }
+
+    .company-info h4{
+
+        font-size:16px;
+
+    }
+
+    .training-summary{
+
+        font-size:16px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .training-card{
+
+        padding:24px;
+
+    }
+
+    .company-logo{
+
+        width:52px;
+
+        height:52px;
+
+        font-size:22px;
+
+    }
+
+    .stat-card{
+
+        padding:22px 16px;
+
+    }
+
+    .stat-card h3{
+
+        font-size:30px;
+
+    }
+
+    .tech-chip{
+
+        font-size:13px;
+
+        padding:8px 14px;
+
+    }
+
+}
+.training-card{
+
+    isolation:isolate;
+
+}
+
+.training-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    border-radius:inherit;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(59,130,246,.06),
+        transparent 45%
+    );
+
+    opacity:0;
+
+    transition:var(--transition);
+
+}
+
+.training-card:hover::after{
+
+    opacity:1;
+
+}

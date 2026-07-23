@@ -1,0 +1,300 @@
+/* ==========================================================
+   EDUCATION SECTION
+========================================================== */
+
+.education-section{
+    background:var(--bg-primary);
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.education-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    margin-bottom:55px;
+}
+
+.education-section-title{
+
+    position:relative;
+
+    display:inline-block;
+
+    margin-bottom:18px;
+}
+
+.education-section-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-10px;
+
+    width:90px;
+
+    height:4px;
+
+    border-radius:50px;
+
+    background:var(--gradient);
+}
+
+.education-section-subtitle{
+
+    text-align:left;
+
+    margin:0;
+
+    max-width:650px;
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.education-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+}
+
+/* ==========================================================
+   ROW
+========================================================== */
+
+.education-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:14px 22px;
+
+    background:#161B22;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    transition:var(--transition);
+}
+
+.education-row:hover{
+
+    transform:translateY(-5px);
+
+    border-color:rgba(59,130,246,.45);
+
+    box-shadow:var(--shadow);
+}
+
+/* ==========================================================
+   LEFT
+========================================================== */
+
+.education-left{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    flex:1;
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.education-icon{
+
+    font-size:28px;
+
+    color:var(--primary);
+
+    margin-top:4px;
+
+    flex-shrink:0;
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.education-content{
+
+    flex:1;
+}
+
+/* ==========================================================
+   TOP ROW
+========================================================== */
+
+.education-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:6px;
+}
+
+.education-degree{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:var(--text-primary);
+}
+
+.education-duration{
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+}
+
+/* ==========================================================
+   STREAM
+========================================================== */
+
+.education-stream{
+
+    color:var(--text-primary);
+
+    font-size:17px;
+
+    font-weight:500;
+
+    margin-bottom:5px;
+}
+
+/* ==========================================================
+   INSTITUTE
+========================================================== */
+
+.education-institute{
+
+    color:var(--text-secondary);
+
+    font-size:15px;
+
+    line-height:1.6;
+}
+
+/* ==========================================================
+   SCORE
+========================================================== */
+
+.education-score{
+
+    min-width:140px;
+
+    text-align:right;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    white-space:nowrap;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .education-row{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+        padding:20px;
+    }
+
+    .education-left{
+
+        width:100%;
+    }
+
+    .education-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:6px;
+    }
+
+    .education-score{
+
+        min-width:auto;
+
+        text-align:left;
+
+        font-size:17px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .education-degree{
+
+        font-size:20px;
+    }
+
+    .education-stream{
+
+        font-size:16px;
+    }
+
+    .education-institute{
+
+        font-size:14px;
+    }
+
+    .education-icon{
+
+        font-size:24px;
+    }
+
+    .education-row{
+
+        padding:18px;
+    }
+
+}
